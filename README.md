@@ -1,1 +1,1 @@
-# My Randowm dotfiles
+# My Random dotfiles
