@@ -108,6 +108,8 @@ HISTFILE=~/.zsh_history
 
 alias cat="bat"
 alias ll="eza -lahg --icons"
+alias ..="cd .."
+alias ...="cd ../.."
 
 eval $(thefuck --alias)
 
