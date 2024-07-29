@@ -1,5 +1,1 @@
-##Oh my ZSH
-
-```
-ln -s ~/.dotfiles/.zshrc ~/.zshrc
-```
+# My Randowm dotfiles
