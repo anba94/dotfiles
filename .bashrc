@@ -31,3 +31,5 @@ alias ..='cd ..'
 alias ...='cd ../..'
 HISTSIZE=1000
 HISTFILESIZE=2000
+
+pokemon-colorscripts -r --no-title
