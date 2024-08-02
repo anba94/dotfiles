@@ -33,3 +33,4 @@ HISTSIZE=1000
 HISTFILESIZE=2000
 
 pokemon-colorscripts -r --no-title
+eval "$(zoxide init --cmd cd bash)"

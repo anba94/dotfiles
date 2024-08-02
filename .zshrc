@@ -120,5 +120,7 @@ eval $(thefuck --alias)
 
 export PATH=$(go env GOPATH)/bin:$PATH
 eval "$(starship init zsh)"
+eval "$(zoxide init --cmd cd zsh)"
+
 
 pokemon-colorscripts -r --no-title
