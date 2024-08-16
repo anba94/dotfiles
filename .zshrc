@@ -16,6 +16,7 @@ SAVEHIST=10000
 HISTFILE=~/.zsh_history
 
 alias cat="bat"
+alias ls="eza --icons"
 alias ll="eza -lahg --icons"
 alias ..="cd .."
 alias ...="cd ../.."
