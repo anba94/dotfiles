@@ -11,8 +11,8 @@ plugins=(git zsh-autosuggestions kubectl zsh-syntax-highlighting fast-syntax-hig
 
 source $ZSH/oh-my-zsh.sh
 
-HISTSIZE=10000
-SAVEHIST=10000
+HISTSIZE=50000
+SAVEHIST=50000
 HISTFILE=~/.zsh_history
 
 alias cat="bat"
