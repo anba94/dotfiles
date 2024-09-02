@@ -21,9 +21,7 @@ alias ll="eza -lahg --icons"
 alias ..="cd .."
 alias ...="cd ../.."
 
-alias perp='function _perp(){ query="$@"; encoded_query=$(echo "$query"
-       │  | sed "s/ /%20/g"); xdg-open "https://www.perplexity.ai/?q=$encoded_qu
-       │ ery"; }; _perp'
+alias perp='function _perp(){ query="$@"; encoded_query=$(echo "$query | sed "s/ /%20/g"); xdg-open "https://www.perplexity.ai/?q=$encoded_query"; }; _perp'
 
 eval $(thefuck --alias)
 

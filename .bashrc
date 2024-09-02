@@ -32,9 +32,7 @@ alias ...='cd ../..'
 HISTSIZE=1000
 HISTFILESIZE=2000
 
-alias perp='function _perp(){ query="$@"; encoded_query=$(echo "$query"
-       │  | sed "s/ /%20/g"); xdg-open "https://www.perplexity.ai/?q=$encoded_qu
-       │ ery"; }; _perp'
+alias perp='function _perp(){ query="$@"; encoded_query=$(echo "$query | sed "s/ /%20/g"); xdg-open "https://www.perplexity.ai/?q=$encoded_query"; }; _perp'
 
 
 pokemon-colorscripts -r --no-title
