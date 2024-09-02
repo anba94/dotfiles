@@ -32,5 +32,10 @@ alias ...='cd ../..'
 HISTSIZE=1000
 HISTFILESIZE=2000
 
+alias perp='function _perp(){ query="$@"; encoded_query=$(echo "$query"
+       │  | sed "s/ /%20/g"); xdg-open "https://www.perplexity.ai/?q=$encoded_qu
+       │ ery"; }; _perp'
+
+
 pokemon-colorscripts -r --no-title
 eval "$(zoxide init --cmd cd bash)"
