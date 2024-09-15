@@ -32,7 +32,23 @@ alias ...='cd ../..'
 HISTSIZE=1000
 HISTFILESIZE=2000
 
-alias perp='function _perp(){ query="$@"; encoded_query=$(echo "$query | sed "s/ /%20/g"); xdg-open "https://www.perplexity.ai/?q=$encoded_query"; }; _perp'
+perplexity() {
+  if [ $# -eq 0 ]; then
+    echo "Usage: perplexity <your query>"
+  else
+    query=$(echo "$*" | sed 's/ /+/g')
+    url="https://www.perplexity.ai/?q=$query"
+    if [[ "$OSTYPE" == "darwin"* ]]; then
+      open "$url"
+    elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
+      xdg-open "$url"
+    else
+      echo "Unsupported operating system"
+    fi
+  fi
+}
+
+alias ai='perplexity'
 
 
 pokemon-colorscripts -r --no-title
