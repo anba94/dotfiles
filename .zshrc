@@ -39,6 +39,20 @@ perplexity() {
 
 alias ai='perplexity'
 
+daily_note() {
+    local dir="$HOME/obsidian/work/daylinotes"
+    local date=$(date +"%Y-%m-%d")
+    local file="$dir/$date.md"
+    local timestamp=$(date +"%H:%M:%S")
+    local entry="\n### $timestamp\n"
+    
+    for item in "$@"; do
+        entry+="- [ ] $item\n"
+    done
+
+    echo -e "$entry" >> "$file"
+    echo "Entry added to $file."
+}
 
 eval $(thefuck --alias)
 
