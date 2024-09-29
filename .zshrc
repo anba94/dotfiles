@@ -39,7 +39,7 @@ perplexity() {
 
 alias ai='perplexity'
 
-daily_note() {
+daily_task() {
     local dir="$HOME/obsidian/work/daylinotes"
     local date=$(date +"%Y-%m-%d")
     local file="$dir/$date.md"
