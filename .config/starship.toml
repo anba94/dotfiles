@@ -19,6 +19,8 @@ $java\
 $kotlin\
 $haskell\
 $python\
+[](fg:color_blue bg:color_purple)\
+$kubernetes\
 [](fg:color_blue bg:color_bg3)\
 $docker_context\
 $conda\
@@ -183,3 +185,11 @@ format = 'via $symbol [${ram}( | ${swap})]($style) '
 min_time = 1000
 format = "took [$duration]($style) "
 style = "bold yellow"
+
+[kubernetes]
+symbol = "☸ "
+style = "bg:color_purple fg:color_fg0"
+format = '[[ $symbol$context( \($namespace\)) ](fg:color_fg0 bg:color_purple)]($style)'
+disabled = false
+detect_files = ["k8s", "Dockerfile", "docker-compose.yml"]
+detect_folders = ["k8s", "kubernetes"]
